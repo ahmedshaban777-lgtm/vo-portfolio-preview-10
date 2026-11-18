@@ -230,3 +230,68 @@ section[id] {
 .features article .sample-icon {
   text-align: right;
 }
+
+/* ---------- QC round 2 ---------- */
+/* RTL header: brand right, menu left (template pins nav to the right) */
+#header nav {
+  right: auto;
+  left: 0.7em;
+}
+
+@media screen and (max-width: 736px) {
+  #header nav {
+    right: auto;
+    left: 0;
+  }
+}
+
+/* RTL card gap: template gaps via margin-right (collapses in RTL) */
+.features article {
+  margin: 1.5em 0 1.5em 3em;
+}
+
+.features article:nth-child(2n) {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 980px) {
+  .features article {
+    margin: 1em 0 1em 2em;
+  }
+  .features article:nth-child(2n) {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .features article {
+    margin: 0.875em 0 0.875em 1.75em;
+  }
+  .features article:nth-child(2n) {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .features article {
+    margin: 0 0 2em 0 !important;
+  }
+}
+
+/* circular portrait: keep the whole face inside the crop */
+.spotlight .image img {
+  object-position: 72% 25%;
+}
+
+/* footer contrast */
+#footer ul.contact li {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+#footer ul.contact li:before {
+  color: #ffffff;
+}
+
+#footer ul.copyright {
+  color: rgba(255, 255, 255, 0.85);
+}
