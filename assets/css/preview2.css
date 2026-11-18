@@ -1,0 +1,232 @@
+/* =====================================================
+   Preview 2 overrides - Ahmed Sha'ban VO portfolio
+   Base: Solid State by HTML5 UP (CCA 3.0, credit in footer)
+   ===================================================== */
+
+/* ---------- Arabic typography ---------- */
+body, input, select, textarea {
+  font-family: "Tajawal", "Cairo", system-ui, sans-serif;
+  letter-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+#header h1,
+#banner h2,
+#menu .links li a,
+.button, input[type="submit"], input[type="button"], button {
+  font-family: "Cairo", "Tajawal", sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.7;
+  font-weight: 800;
+}
+
+p {
+  line-height: 1.9;
+}
+
+/* major headings: keep the rule, but clear of Arabic glyphs */
+h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
+  padding-bottom: 0.55em;
+  margin-bottom: 0.9em;
+}
+
+/* ---------- Header / menu ---------- */
+#header h1 a {
+  letter-spacing: 0;
+}
+
+#menu .links li a {
+  font-weight: 600;
+}
+
+/* ---------- Banner ---------- */
+#banner .logo {
+  width: 9em;
+  height: 9em;
+  border-radius: 100%;
+  overflow: hidden;
+  border: solid 2px rgba(255, 255, 255, 0.35);
+}
+
+#banner .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+  display: block;
+}
+
+#banner h2 {
+  font-size: 2.6em;
+  font-weight: 900;
+  margin: 0.4em 0 0.1em;
+}
+
+#banner .banner-title {
+  font-family: "Cairo", "Tajawal", sans-serif;
+  font-weight: 700;
+  font-size: 1.25em;
+  color: #ffffff;
+  letter-spacing: 0;
+  margin: 0 0 0.2em;
+}
+
+#banner .banner-tagline {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  font-size: 1.05em;
+  color: rgba(255, 255, 255, 0.92);
+  letter-spacing: 0;
+}
+
+#banner .actions {
+  margin-top: 2em;
+}
+
+@media screen and (max-width: 736px) {
+  #banner h2 {
+    font-size: 2em;
+  }
+  #banner .logo {
+    width: 7em;
+    height: 7em;
+  }
+}
+
+/* ---------- About ---------- */
+.about-clients {
+  font-size: 0.95em;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.spotlight .image img {
+  display: block;
+}
+
+/* ---------- Samples ---------- */
+.section-intro {
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 42em;
+}
+
+.features article {
+  text-align: right;
+}
+
+.features article .sample-icon {
+  font-size: 1.6em;
+  color: #8c9ac6;
+  display: block;
+  margin-bottom: 0.6em;
+}
+
+.features article h3 {
+  font-size: 1.05em;
+  font-weight: 700;
+}
+
+.features article .sample-meta {
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1em;
+}
+
+.features article audio {
+  width: 100%;
+  height: 42px;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* ---------- Buttons ---------- */
+.button, input[type="submit"], input[type="button"], button {
+  font-weight: 700;
+}
+
+.button.primary {
+  background: #ffffff;
+  color: #2e3141 !important;
+}
+
+.button.primary:hover {
+  background: #b8c2e0;
+}
+
+.button .icon {
+  margin-inline-end: 0.35em;
+}
+
+/* ---------- Footer ---------- */
+#footer .section-intro {
+  margin-bottom: 1.5em;
+}
+
+#footer .actions {
+  margin-bottom: 2em;
+}
+
+ul.contact li {
+  padding-right: 3.25em;
+  padding-left: 0;
+}
+
+ul.contact li:before {
+  right: 0;
+  left: auto;
+}
+
+ul.contact li a {
+  color: inherit;
+  border-bottom: none;
+}
+
+ul.contact li a:hover {
+  color: #b8c2e0;
+}
+
+ul.copyright li {
+  border: none;
+  padding: 0 0 0 0;
+  margin: 0 0 0 1em;
+}
+
+ul.copyright {
+  letter-spacing: 0;
+  font-size: 0.85em;
+}
+
+/* RTL: footer contact column border */
+@media screen and (min-width: 981px) {
+  #footer .inner > *:nth-child(2) {
+    border-right: none;
+  }
+}
+
+/* ---------- QC fixes ---------- */
+/* anchor jumps: keep section headings below the fixed header */
+section[id] {
+  scroll-margin-top: 72px;
+}
+
+/* circular spotlight portrait, not ellipse */
+.spotlight .image {
+  border-radius: 100%;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+
+.spotlight .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 25%;
+}
+
+/* sample icons align with the text */
+.features article .sample-icon {
+  text-align: right;
+}
